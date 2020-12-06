@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "loadash": "^1.0.0",
+    "mobx": "^5.8.0",
+    "mobx-react": "^5.4.3",
+    "node-sass": "^4.14.1",
+    "react": "^16.14.0",
+    "react-decoration": "^2.0.0",
+    "react-dom": "^16.14.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@monaco-editor/react": "^3.7.0",
+    "@reduxjs/toolkit": "^1.4.0",
+    "glsl-loader": "0.0.1",
+    "monaco-editor-webpack-plugin": "^2.0.0",
+    "raw-loader": "^4.0.2",
+    "react-monaco-editor": "^0.40.0",
+    "recoil": "git+https://github.com/facebookexperimental/Recoil.git#nightly",
+    "redux": "^4.0.5"
+  }
+}
