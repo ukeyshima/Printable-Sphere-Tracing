@@ -27,7 +27,7 @@ const App = () => {
         </Grid>
         <Grid item xs={4}>
           <Iframe />
-          <SliceSlider />
+          {/* <SliceSlider /> */}
           <ExportGCodeButton />
         </Grid>
       </Grid>

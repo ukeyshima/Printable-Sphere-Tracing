@@ -31,7 +31,7 @@ export const canvasSizeState = atom({
 
 export const sliceNumState = atom({
     key: 'sliceNumState',
-    default: 3
+    default: 100
 })
 
 export default codeState;

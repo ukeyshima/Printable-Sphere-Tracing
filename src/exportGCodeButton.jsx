@@ -2,7 +2,7 @@ import Button from '@material-ui/core/Button';
 import { renderResultState, canvasSizeState, sliceNumState } from './store'
 import React from 'react';
 import { useRecoilValue } from 'recoil'
-import slic3rGcode from './slic3rGcode'
+import Slic3rGcode from './slic3rGcode'
 
 const ExportButton = () => {
     const renderResult = useRecoilValue(renderResultState)
@@ -73,10 +73,11 @@ const ExportButton = () => {
             })
             positions.push(position)
         })
-        const size = 80
-        // 0.3/(positions[1].z - positions[0].z)
+        const size = 80        
 
         const startZ = positions[0].z * size + startPoint.z
+
+        const slic3rGcode = Slic3rGcode()
 
         let gCode = `${slic3rGcode.header}
 G1 Z${startZ} F7800
